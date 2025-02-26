@@ -12,33 +12,27 @@ enum CustomError: Error {
     case invalidResponse
     case noDataReceived
     case networkError(String)
-    case serverError(Int) // Handle specific HTTP errors
-    case unknownError(String)
-
+    
     init(statusCode: Int) {
         switch statusCode {
         case 400...499:
-            self = .serverError(statusCode) // Client errors
+            self = .invalidResponse
         case 500...599:
-            self = .serverError(statusCode) // Server errors
+            self = .networkError("Server error")
         default:
-            self = .unknownError("Unknown error occurred with status code: \(statusCode)")
+            self = .networkError("Unknown error")
         }
     }
     
     var localizedDescription: String {
         switch self {
         case .noInternetConnection:
-            return "No internet connection available"
+            return "Internet connection is unavailable."
         case .invalidResponse:
-            return "Invalid response received from server"
+            return "Invalid response from the server."
         case .noDataReceived:
-            return "No data received from server"
+            return "No data received from the server."
         case .networkError(let message):
-            return message
-        case .serverError(let statusCode):
-            return "Server error with status code: \(statusCode)"
-        case .unknownError(let message):
             return message
         }
     }

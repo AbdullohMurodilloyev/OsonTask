@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func setupMainWindow() {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.overrideUserInterfaceStyle = .light
-        window?.rootViewController = TodosViewController(viewModel: TodosViewModel())
+        window?.rootViewController = UINavigationController(rootViewController: TodosViewController(viewModel: TodosViewModel()))
         window?.makeKeyAndVisible()
     }
 }

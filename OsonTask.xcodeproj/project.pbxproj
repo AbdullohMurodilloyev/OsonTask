@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB5565E72D6F40ED007300F0 /* TodoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5565E62D6F40EB007300F0 /* TodoDetailsViewController.swift */; };
+		DB5565EA2D6F48A7007300F0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5565E92D6F48A7007300F0 /* CoreData.framework */; };
 		DBCCF9282D6F1884001623B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCCF9272D6F1884001623B2 /* AppDelegate.swift */; };
 		DBCCF9312D6F1885001623B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBCCF9302D6F1885001623B2 /* Assets.xcassets */; };
-		DBCCF93F2D6F1C98001623B2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DBCCF93E2D6F1C97001623B2 /* SnapKit */; };
 		DBCCF9422D6F1CB7001623B2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DBCCF9412D6F1CB7001623B2 /* Alamofire */; };
 		DBCCF94C2D6F1FA2001623B2 /* TodosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCCF94B2D6F1FA2001623B2 /* TodosViewController.swift */; };
 		DBCCF94E2D6F1FB1001623B2 /* TodosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCCF94D2D6F1FAB001623B2 /* TodosViewModel.swift */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB5565E62D6F40EB007300F0 /* TodoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailsViewController.swift; sourceTree = "<group>"; };
+		DB5565E92D6F48A7007300F0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		DBCCF9242D6F1884001623B2 /* OsonTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OsonTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBCCF9272D6F1884001623B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBCCF9302D6F1885001623B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBCCF93F2D6F1C98001623B2 /* SnapKit in Frameworks */,
+				DB5565EA2D6F48A7007300F0 /* CoreData.framework in Frameworks */,
 				DBCCF9422D6F1CB7001623B2 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,10 +46,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB5565E52D6F40A5007300F0 /* Todos */ = {
+			isa = PBXGroup;
+			children = (
+				DBCCF94B2D6F1FA2001623B2 /* TodosViewController.swift */,
+				DBCCF94D2D6F1FAB001623B2 /* TodosViewModel.swift */,
+			);
+			path = Todos;
+			sourceTree = "<group>";
+		};
+		DB5565E82D6F48A7007300F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB5565E92D6F48A7007300F0 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DBCCF91B2D6F1884001623B2 = {
 			isa = PBXGroup;
 			children = (
 				DBCCF93C2D6F18A0001623B2 /* OsonTask */,
+				DB5565E82D6F48A7007300F0 /* Frameworks */,
 				DBCCF9252D6F1884001623B2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,8 +103,8 @@
 		DBCCF9492D6F1F41001623B2 /* Moduls */ = {
 			isa = PBXGroup;
 			children = (
-				DBCCF94B2D6F1FA2001623B2 /* TodosViewController.swift */,
-				DBCCF94D2D6F1FAB001623B2 /* TodosViewModel.swift */,
+				DB5565E52D6F40A5007300F0 /* Todos */,
+				DB5565E62D6F40EB007300F0 /* TodoDetailsViewController.swift */,
 			);
 			path = Moduls;
 			sourceTree = "<group>";
@@ -115,7 +136,6 @@
 			);
 			name = OsonTask;
 			packageProductDependencies = (
-				DBCCF93E2D6F1C97001623B2 /* SnapKit */,
 				DBCCF9412D6F1CB7001623B2 /* Alamofire */,
 			);
 			productName = OsonTask;
@@ -147,7 +167,6 @@
 			mainGroup = DBCCF91B2D6F1884001623B2;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				DBCCF93D2D6F1C97001623B2 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				DBCCF9402D6F1CB7001623B2 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
@@ -177,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBCCF9532D6F205E001623B2 /* CustomError.swift in Sources */,
+				DB5565E72D6F40ED007300F0 /* TodoDetailsViewController.swift in Sources */,
 				DBCCF94C2D6F1FA2001623B2 /* TodosViewController.swift in Sources */,
 				DBCCF94E2D6F1FB1001623B2 /* TodosViewModel.swift in Sources */,
 				DBCCF9552D6F262B001623B2 /* Models.swift in Sources */,
@@ -387,14 +407,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DBCCF93D2D6F1C97001623B2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.7.1;
-			};
-		};
 		DBCCF9402D6F1CB7001623B2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -406,11 +418,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DBCCF93E2D6F1C97001623B2 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DBCCF93D2D6F1C97001623B2 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
 		DBCCF9412D6F1CB7001623B2 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DBCCF9402D6F1CB7001623B2 /* XCRemoteSwiftPackageReference "Alamofire" */;

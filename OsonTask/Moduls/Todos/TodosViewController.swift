@@ -65,13 +65,14 @@ class TodosViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let userName = viewModel.users.first { $0.id == todo.userId }?.name ?? "Unknown"
         
         cell.textLabel?.numberOfLines = 0
-        cell.textLabel?.text = "\(todo.title)\nBy: \(userName)"
+        cell.textLabel?.text = "id\(todo.id)\n\(todo.title)\nBy: \(userName)"
         cell.textLabel?.textColor = .black
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let searchText = searchBar.text, searchText.isEmpty else { return }
         if indexPath.row == viewModel.filteredTodos.count - 1 {
             viewModel.loadMore { [weak self] in
                 DispatchQueue.main.async {
@@ -84,7 +85,8 @@ class TodosViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let todo = viewModel.filteredTodos[indexPath.row]
-        print("DID SELECT == ", todo)
+        let detailsVC = TodoDetailsViewController(todo: todo, user: viewModel.users.first { $0.id == todo.userId })
+        navigationController?.pushViewController(detailsVC, animated: true)
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

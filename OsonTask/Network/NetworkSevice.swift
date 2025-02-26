@@ -39,16 +39,13 @@ class NetworkService {
             completion(.failure(.invalidResponse))
             return
         }
-        
-        let requestHeaders = modifyHeaders(headers)
-        
+                
         // Perform the request
         AF.request(
             url,
             method: method,
             parameters: params,
-            encoding: method == .get ? URLEncoding.default : JSONEncoding.default,
-            headers: requestHeaders
+            encoding: method == .get ? URLEncoding.default : JSONEncoding.default
         ).validate(statusCode: 200...299).responseDecodable(of: T.self) { response in
             if let statusCode = response.response?.statusCode {
                 print("HTTP Status Code:", statusCode)
@@ -66,13 +63,5 @@ class NetworkService {
                 }
             }
         }
-    }
-    
-    // Modify headers to include required parameters
-    private static func modifyHeaders(_ headers: HTTPHeaders?) -> HTTPHeaders {
-        var _headers: HTTPHeaders = headers ?? HTTPHeaders()
-        _headers.add(name: "Accept", value: "application/json")
-        _headers.add(name: "Content-Type", value: "application/json")
-        return _headers
     }
 }

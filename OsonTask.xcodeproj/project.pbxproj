@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		DB5565E72D6F40ED007300F0 /* TodoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5565E62D6F40EB007300F0 /* TodoDetailsViewController.swift */; };
 		DB5565EA2D6F48A7007300F0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5565E92D6F48A7007300F0 /* CoreData.framework */; };
+		DB5565EE2D6F4929007300F0 /* OsonTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB5565EC2D6F4929007300F0 /* OsonTask.xcdatamodeld */; };
+		DB5565F12D6F4962007300F0 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5565F02D6F4957007300F0 /* CoreDataManager.swift */; };
+		DB5565F82D6F5EA4007300F0 /* UserEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5565F62D6F5EA4007300F0 /* UserEntity+CoreDataClass.swift */; };
+		DB5565F92D6F5EA4007300F0 /* TodosEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5565F52D6F5EA4007300F0 /* TodosEntity+CoreDataProperties.swift */; };
+		DB5565FA2D6F5EA4007300F0 /* UserEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5565F72D6F5EA4007300F0 /* UserEntity+CoreDataProperties.swift */; };
+		DB5565FB2D6F5EA4007300F0 /* AddressEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5565F22D6F5EA4007300F0 /* AddressEntity+CoreDataClass.swift */; };
+		DB5565FC2D6F5EA4007300F0 /* AddressEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5565F32D6F5EA4007300F0 /* AddressEntity+CoreDataProperties.swift */; };
+		DB5565FD2D6F5EA4007300F0 /* TodosEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5565F42D6F5EA4007300F0 /* TodosEntity+CoreDataClass.swift */; };
+		DB5565FF2D6F5F66007300F0 /* DataBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5565FE2D6F5F65007300F0 /* DataBaseHelper.swift */; };
 		DBCCF9282D6F1884001623B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCCF9272D6F1884001623B2 /* AppDelegate.swift */; };
 		DBCCF9312D6F1885001623B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBCCF9302D6F1885001623B2 /* Assets.xcassets */; };
 		DBCCF9422D6F1CB7001623B2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DBCCF9412D6F1CB7001623B2 /* Alamofire */; };
@@ -22,6 +31,15 @@
 /* Begin PBXFileReference section */
 		DB5565E62D6F40EB007300F0 /* TodoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailsViewController.swift; sourceTree = "<group>"; };
 		DB5565E92D6F48A7007300F0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DB5565ED2D6F4929007300F0 /* OsonTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OsonTask.xcdatamodel; sourceTree = "<group>"; };
+		DB5565F02D6F4957007300F0 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		DB5565F22D6F5EA4007300F0 /* AddressEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddressEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DB5565F32D6F5EA4007300F0 /* AddressEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddressEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DB5565F42D6F5EA4007300F0 /* TodosEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodosEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DB5565F52D6F5EA4007300F0 /* TodosEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodosEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DB5565F62D6F5EA4007300F0 /* UserEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DB5565F72D6F5EA4007300F0 /* UserEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DB5565FE2D6F5F65007300F0 /* DataBaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseHelper.swift; sourceTree = "<group>"; };
 		DBCCF9242D6F1884001623B2 /* OsonTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OsonTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBCCF9272D6F1884001623B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBCCF9302D6F1885001623B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +81,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DB5565EF2D6F493A007300F0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				DB5565F02D6F4957007300F0 /* CoreDataManager.swift */,
+				DB5565FE2D6F5F65007300F0 /* DataBaseHelper.swift */,
+				DB5565F22D6F5EA4007300F0 /* AddressEntity+CoreDataClass.swift */,
+				DB5565F32D6F5EA4007300F0 /* AddressEntity+CoreDataProperties.swift */,
+				DB5565F42D6F5EA4007300F0 /* TodosEntity+CoreDataClass.swift */,
+				DB5565F52D6F5EA4007300F0 /* TodosEntity+CoreDataProperties.swift */,
+				DB5565F62D6F5EA4007300F0 /* UserEntity+CoreDataClass.swift */,
+				DB5565F72D6F5EA4007300F0 /* UserEntity+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		DBCCF91B2D6F1884001623B2 = {
 			isa = PBXGroup;
 			children = (
@@ -84,9 +117,11 @@
 			isa = PBXGroup;
 			children = (
 				DBCCF9482D6F1E60001623B2 /* Resources */,
+				DB5565EF2D6F493A007300F0 /* CoreData */,
 				DBCCF94A2D6F1F50001623B2 /* Network */,
 				DBCCF9492D6F1F41001623B2 /* Moduls */,
 				DBCCF9352D6F1885001623B2 /* Info.plist */,
+				DB5565EC2D6F4929007300F0 /* OsonTask.xcdatamodeld */,
 			);
 			path = OsonTask;
 			sourceTree = "<group>";
@@ -199,9 +234,18 @@
 				DB5565E72D6F40ED007300F0 /* TodoDetailsViewController.swift in Sources */,
 				DBCCF94C2D6F1FA2001623B2 /* TodosViewController.swift in Sources */,
 				DBCCF94E2D6F1FB1001623B2 /* TodosViewModel.swift in Sources */,
+				DB5565FF2D6F5F66007300F0 /* DataBaseHelper.swift in Sources */,
+				DB5565F82D6F5EA4007300F0 /* UserEntity+CoreDataClass.swift in Sources */,
+				DB5565F92D6F5EA4007300F0 /* TodosEntity+CoreDataProperties.swift in Sources */,
+				DB5565FA2D6F5EA4007300F0 /* UserEntity+CoreDataProperties.swift in Sources */,
+				DB5565FB2D6F5EA4007300F0 /* AddressEntity+CoreDataClass.swift in Sources */,
+				DB5565FC2D6F5EA4007300F0 /* AddressEntity+CoreDataProperties.swift in Sources */,
+				DB5565FD2D6F5EA4007300F0 /* TodosEntity+CoreDataClass.swift in Sources */,
 				DBCCF9552D6F262B001623B2 /* Models.swift in Sources */,
 				DBCCF9282D6F1884001623B2 /* AppDelegate.swift in Sources */,
+				DB5565F12D6F4962007300F0 /* CoreDataManager.swift in Sources */,
 				DBCCF9512D6F2032001623B2 /* NetworkSevice.swift in Sources */,
+				DB5565EE2D6F4929007300F0 /* OsonTask.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +259,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7GLT7PUB6Q;
+				DEVELOPMENT_TEAM = 64UN58Z99B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OsonTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -243,7 +287,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7GLT7PUB6Q;
+				DEVELOPMENT_TEAM = 64UN58Z99B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OsonTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -424,6 +468,19 @@
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		DB5565EC2D6F4929007300F0 /* OsonTask.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DB5565ED2D6F4929007300F0 /* OsonTask.xcdatamodel */,
+			);
+			currentVersion = DB5565ED2D6F4929007300F0 /* OsonTask.xcdatamodel */;
+			path = OsonTask.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DBCCF91C2D6F1884001623B2 /* Project object */;
 }

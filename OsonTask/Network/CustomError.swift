@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum CustomError: Error {
+enum CustomError: Error, Equatable {
     case noInternetConnection
     case invalidResponse
     case noDataReceived

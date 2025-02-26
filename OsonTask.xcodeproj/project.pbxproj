@@ -6,36 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DBCCF9282D6F1884001623B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCCF9272D6F1884001623B2 /* AppDelegate.swift */; };
+		DBCCF92C2D6F1884001623B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCCF92B2D6F1884001623B2 /* ViewController.swift */; };
+		DBCCF9312D6F1885001623B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBCCF9302D6F1885001623B2 /* Assets.xcassets */; };
+		DBCCF93F2D6F1C98001623B2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DBCCF93E2D6F1C97001623B2 /* SnapKit */; };
+		DBCCF9422D6F1CB7001623B2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DBCCF9412D6F1CB7001623B2 /* Alamofire */; };
+		DBCCF9452D6F1CDA001623B2 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = DBCCF9442D6F1CDA001623B2 /* SwiftyJSON */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DBCCF9242D6F1884001623B2 /* OsonTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OsonTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBCCF9272D6F1884001623B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBCCF92B2D6F1884001623B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBCCF9302D6F1885001623B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBCCF9352D6F1885001623B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		DBCCF9362D6F1885001623B2 /* Exceptions for "OsonTask" folder in "OsonTask" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = DBCCF9232D6F1884001623B2 /* OsonTask */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		DBCCF9262D6F1884001623B2 /* OsonTask */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				DBCCF9362D6F1885001623B2 /* Exceptions for "OsonTask" folder in "OsonTask" target */,
-			);
-			path = OsonTask;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DBCCF9212D6F1884001623B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBCCF9452D6F1CDA001623B2 /* SwiftyJSON in Frameworks */,
+				DBCCF93F2D6F1C98001623B2 /* SnapKit in Frameworks */,
+				DBCCF9422D6F1CB7001623B2 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +40,7 @@
 		DBCCF91B2D6F1884001623B2 = {
 			isa = PBXGroup;
 			children = (
-				DBCCF9262D6F1884001623B2 /* OsonTask */,
+				DBCCF93C2D6F18A0001623B2 /* OsonTask */,
 				DBCCF9252D6F1884001623B2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +51,25 @@
 				DBCCF9242D6F1884001623B2 /* OsonTask.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DBCCF93C2D6F18A0001623B2 /* OsonTask */ = {
+			isa = PBXGroup;
+			children = (
+				DBCCF9482D6F1E60001623B2 /* Resources */,
+			);
+			path = OsonTask;
+			sourceTree = "<group>";
+		};
+		DBCCF9482D6F1E60001623B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DBCCF9272D6F1884001623B2 /* AppDelegate.swift */,
+				DBCCF92B2D6F1884001623B2 /* ViewController.swift */,
+				DBCCF9302D6F1885001623B2 /* Assets.xcassets */,
+				DBCCF9352D6F1885001623B2 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,11 +87,11 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				DBCCF9262D6F1884001623B2 /* OsonTask */,
-			);
 			name = OsonTask;
 			packageProductDependencies = (
+				DBCCF93E2D6F1C97001623B2 /* SnapKit */,
+				DBCCF9412D6F1CB7001623B2 /* Alamofire */,
+				DBCCF9442D6F1CDA001623B2 /* SwiftyJSON */,
 			);
 			productName = OsonTask;
 			productReference = DBCCF9242D6F1884001623B2 /* OsonTask.app */;
@@ -107,6 +121,11 @@
 			);
 			mainGroup = DBCCF91B2D6F1884001623B2;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DBCCF93D2D6F1C97001623B2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				DBCCF9402D6F1CB7001623B2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				DBCCF9432D6F1CDA001623B2 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DBCCF9252D6F1884001623B2 /* Products */;
 			projectDirPath = "";
@@ -122,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBCCF9312D6F1885001623B2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBCCF92C2D6F1884001623B2 /* ViewController.swift in Sources */,
+				DBCCF9282D6F1884001623B2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,9 +172,9 @@
 				INFOPLIST_FILE = OsonTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -178,9 +200,9 @@
 				INFOPLIST_FILE = OsonTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +357,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DBCCF93D2D6F1C97001623B2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		DBCCF9402D6F1CB7001623B2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		DBCCF9432D6F1CDA001623B2 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DBCCF93E2D6F1C97001623B2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBCCF93D2D6F1C97001623B2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		DBCCF9412D6F1CB7001623B2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBCCF9402D6F1CB7001623B2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		DBCCF9442D6F1CDA001623B2 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBCCF9432D6F1CDA001623B2 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DBCCF91C2D6F1884001623B2 /* Project object */;
 }
